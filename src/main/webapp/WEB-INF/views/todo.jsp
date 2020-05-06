@@ -1,5 +1,6 @@
 <html>
 <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <title>Login Page</title>
 </head>
 <body>
@@ -15,10 +16,10 @@
         	<input name="priority" value="LOW" type="radio"> 
        		 <label for="LOW"> Low </label>
        	 	
-       	 	<!-- <label for="targetDate">Deadline : </label>  -->
+       	 	<!-- <label for="targetDate">Deadline : </label> 
+       	 	<input type="targetDate" name="targetDate"> -->
 
-<input type="targetDate" name="targetDate">
-       	<input type="submit" value="Add" />
+       	<input type="submit" class="btn btn-info" value="Add" />
         </p>
     </form>
 </body>

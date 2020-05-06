@@ -28,7 +28,17 @@ public class TodoService {
 		return todos;
 	}
 	
-	
+	public Todo deleteTodo(int id) {
+		for(int i = 0; i <todos.size(); i++) {
+			if(id==todos.get(i).getId()) {
+				Todo deletedItem = todos.remove(i);
+				return deletedItem;
+			}
+			
+		}
+		Todo deletedItem = null;
+		return deletedItem;
+	}
 	
 	
 	
