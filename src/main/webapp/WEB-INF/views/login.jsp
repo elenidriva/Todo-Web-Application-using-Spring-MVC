@@ -1,12 +1,26 @@
-<html>
-<head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<title>To-do list Login Page</title>
-</head>
-<body>
-    <p><font color="red">${errorMessage}</font></p>
-    <form action="/login" method="POST">
-        Name : <input name="name" type="text" /> Password : <input name="password" type="password" /> <input type="submit"  class="btn btn-info" value="Submit" />
-    </form>
-</body>
-</html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
+<c:url value="/login" var="/login"/>  
+<form action="/login" method="post">         
+    <c:if test="${param.error != null}">          
+        <p>  
+            Invalid username and password.  
+        </p>  
+    </c:if>  
+    <c:if test="${param.logout != null}">         
+        <p>  
+            You have been logged out.  
+        </p>  
+    </c:if>  
+    <p>  
+        <label for="username">Username</label>  
+        <input type="text" id="username" name="username"/>      
+    </p>  
+    <p>  
+        <label for="password">Password</label>  
+        <input type="password" id="password" name="password"/>      
+    </p>  
+    <input type="hidden"                          
+        name="${_csrf.parameterName}"  
+        value="${_csrf.token}"/>  
+    <button type="submit" class="btn">Log in</button>  
+</form> 

@@ -5,7 +5,7 @@
 </head>
 <body>
     <form action="/add-todo" method="POST">
-        
+        <fieldset class="form-group">
         Title: <input name="title" type="text" />
         <p>Description : <input name="description" type="text" /> </p>
         <p>High Priority : 
@@ -18,7 +18,7 @@
        	 	
        	 	<!-- <label for="targetDate">Deadline : </label> 
        	 	<input type="targetDate" name="targetDate"> -->
-
+		</fieldset>
        	<input type="submit" class="btn btn-info" value="Add" />
         </p>
     </form>
