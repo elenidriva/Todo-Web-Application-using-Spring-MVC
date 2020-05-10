@@ -1,3 +1,5 @@
+<%@ include file="common/header.jspf"%>
+<%@ include file="common/navigation.jspf"%>
 <html>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
