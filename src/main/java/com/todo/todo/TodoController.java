@@ -2,12 +2,16 @@
 package com.todo.todo;
 
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -66,6 +70,9 @@ public class TodoController {
 
 		return principal.toString();
 	}
+	
+
+	
 	/*@RequestMapping(value = "/delete-todo/${id}", method = RequestMethod.GET)
 	public String removeTodo(@PathVariable ("id") int id, Model model) {
 		

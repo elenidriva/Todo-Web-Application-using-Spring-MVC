@@ -6,9 +6,7 @@
 <title>Login Page</title>
 </head>
 <body>
-
-            <hr class="mb-0">
-          
+=
                 <div class="col-md-6 offset-md-3">
                     <div class="card card-outline-secondary">
                         <div class="card-header">

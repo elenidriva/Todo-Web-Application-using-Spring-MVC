@@ -9,7 +9,6 @@
 <title>${name}'s To-do List </title>
 </head>
 <body>
-	<p> </p>
 	<h1 class="text-center text-info"> To-do List </h1>
 
  	<div class="table-responsive" style="text-align: center">
@@ -33,7 +32,7 @@
  							<td>${todo.priority} </td>
  							<td>${todo.done} </td>
  							<td>
- 								<a type="button" class="btn " style="color: #009da9;"
+ 								<a type="button" class="btn btn-info large " style="background-color: #009da9;"
 								href="/delete-todo?id=${todo.id}">Delete</a>
  							<!-- <a class="button" href="<c:url value= '/delete-todo/${todo.id}'/>" > Delete </a>	 -->
  							</td>

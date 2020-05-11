@@ -8,8 +8,8 @@
 <nav role="navigation" class="navbar navbar-expand-md navbar-dark" style="background-color:#6bc4c4;">
 	<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
 		<ul class="navbar-nav mr-auto">
-			<li  class="nav-item"> <a href="/" class="nav-link" style="color: #57575a;">Home</a></li>	
-			<li class="nav-item active "><a href="/list-todos" class="nav-link"><b>To Do List </b></a></li>
+			<li  class="nav-item"> <a href="/" class="nav-link" style="color: #57575a;"><font size="+1">Home</font></a></li>	
+			<li class="nav-item active "><a href="/list-todos" class="nav-link"><b><font size="+1">To do list</font> </b></a></li>
 		</ul>
 <ul class="nav navbar-nav navbar-right">
 	</ul>		
@@ -23,9 +23,22 @@
      -->  
 	<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
-			<li class="nav-item "> <a href="https://elenidriva.github.io/" class="nav-link" style="color: #57575a;" target="_blank">Eleni's website</a> </li>
+			<li class="nav-item "> <a href="https://elenidriva.github.io/" class="nav-link" style="color: #57575a;" target="_blank"><font size="+2">Eleni's website</font></a> </li>
+        			<a href="/logout" class="btn btn-info large" style="background-color: #009da9;" > <font size="+2">Logout</font> </a>
         </ul>
     </div>
 </nav>
+<p>
+<div class="container">
+<div class="jumbotron">
+ <h1 class="display-4">Hello, viewer!</h1>
+ This is a simple Spring MVC project. This Todo - Task Application implements basic concepts of a Spring Web Application, such as:
+<br>&nbsp;1. Handling the Login / Logout
+<br>&nbsp;2. Viewing - Adding - Editing - Deleting Todos - Tasks
+<br>&nbsp;3. Providing all the necessary security regarding Logging in
+<br>&nbsp;4. For aesthetic reasons a Logo was designed, along with a navigation bar and a header tile. Bootstrap was used in all the .jsp files. 
+<hr class="my-4"> The full project can be found in my github url <a href="https://github.com/elenidriva/Todo-Web-Application-using-Spring-MVC" target="_blank"><b style="color:#6bc4c4;">here</b> </a>
+</div>
+</div>
 </body>
 </html>
