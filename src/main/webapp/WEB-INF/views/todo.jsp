@@ -2,14 +2,25 @@
 <%@ include file="common/navigation.jspf"%>
 <html>
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <title>Login Page</title>
 </head>
 <body>
-    <form action="/add-todo" method="POST">
-        <fieldset class="form-group">
-        Title: <input name="title" type="text" />
-        <p>Description : <input name="description" type="text" /> </p>
+
+            <hr class="mb-0">
+          
+                <div class="col-md-6 offset-md-3">
+                    <div class="card card-outline-secondary">
+                        <div class="card-header">
+                            <h3 class="mb-0 text-center" >Add a to-do</h3>
+                        </div>
+                        <div class="card-body">
+    <form action="/add-todo" method="POST" class="form anchor">
+     <div class="form-group text-center">
+        <div class="form-group">
+        Title: <input name="title" type="text" class="form-control"/>
+        <br> </br>
+        <p>Description : <input name="description" type="text" class="form-control"/> </p>
         <p>High Priority : 
         	<input name="priority" value="HIGH" type="radio"> 
        		 <label for="HIGH"> High </label>
@@ -20,9 +31,14 @@
        	 	
        	 	<!-- <label for="targetDate">Deadline : </label> 
        	 	<input type="targetDate" name="targetDate"> -->
-		</fieldset>
+		</div>
        	<input type="submit" class="btn btn-info" value="Add" />
-        </p>
+        </div>
     </form>
+ </div>
+            </div>
+
+</div>
+
 </body>
 </html>

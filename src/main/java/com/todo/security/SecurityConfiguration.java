@@ -23,7 +23,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity httpSecurity) throws Exception {
 		httpSecurity.authorizeRequests()
 		.antMatchers("/", "/*todo*/**").access("hasRole('USER')").and()
-		.formLogin();
+		.formLogin().and()
+		.csrf().disable();
 /*
         .loginPage("/login")
         .permitAll()

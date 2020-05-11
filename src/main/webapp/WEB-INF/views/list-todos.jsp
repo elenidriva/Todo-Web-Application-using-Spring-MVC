@@ -9,10 +9,12 @@
 <title>${name}'s To-do List </title>
 </head>
 <body>
-	<h1> To-do List of ${name}</h1>
+	<p> </p>
+	<h1 class="text-center text-info"> To-do List </h1>
+
  	<div class="table-responsive" style="text-align: center">
  			<table class="table table-dark table-hover">
- 				<thead>
+ 				<thead style="color:#6bc4c4;">
  						<tr>
  							<th> ID </th>
  							<th> Title </th>
@@ -31,7 +33,7 @@
  							<td>${todo.priority} </td>
  							<td>${todo.done} </td>
  							<td>
- 								<a type="button" class="btn btn-info" 
+ 								<a type="button" class="btn " style="color: #009da9;"
 								href="/delete-todo?id=${todo.id}">Delete</a>
  							<!-- <a class="button" href="<c:url value= '/delete-todo/${todo.id}'/>" > Delete </a>	 -->
  							</td>
@@ -40,7 +42,7 @@
  					</c:forEach>
  				</tbody>
  			</table>
- 			<a href="/add-todo" class="btn btn-info large" > Add </a>
+ 			<a href="/add-todo" class="btn btn-info large" style="background-color: #009da9;" > Add </a>
 
  		</div>				
 
