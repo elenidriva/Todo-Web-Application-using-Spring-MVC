@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class LogoutController {
 
-@RequestMapping(value = "/logout", method = RequestMethod.GET)
+@RequestMapping(value = "/login1", method = RequestMethod.GET)
 	public String logout(HttpServletRequest request,
 			HttpServletResponse response) {
 		Authentication auth = SecurityContextHolder.getContext()
@@ -24,6 +24,6 @@ public class LogoutController {
 		if (auth != null) {
 			new SecurityContextLogoutHandler().logout(request, response, auth);
 		}
-		return "redirect:/";
+		return "/login1";
 	}
 }

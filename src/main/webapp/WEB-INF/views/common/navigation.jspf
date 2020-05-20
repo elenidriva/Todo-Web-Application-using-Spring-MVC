@@ -1,4 +1,5 @@
-<html>
+<html xmlns:th="http://www.thymeleaf.org"
+  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
 <head>
 <title>Todo Application</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
@@ -21,13 +22,16 @@
         </button>
     </div>
      -->  
-	<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+	<div class="navbar-collapse collapse w-100 order-3 dual-collapse2 text-center">
         <ul class="navbar-nav ml-auto">
-			<li class="nav-item "> <a href="https://elenidriva.github.io/" class="nav-link" style="color: #57575a;" target="_blank"><font size="+2">Eleni's website</font></a> </li>
-        			<a href="/logout" class="btn btn-info large" style="background-color: #009da9;" > <font size="+2">Logout</font> </a>
+		<a href="https://elenidriva.github.io/" class="nav-link" style="color: #57575a;" target="_blank"><font size="+1">Eleni's website</font></a> </li>
+
+        		<a href="/logout1" class="btn btn-info" style="background-color: #009da9;" > <font size="+1">Logout</font> </a>
+        			<!-- <a href="/login" class="btn btn-info" style="background-color: #009da9;" > <font size="+1">Login</font> </a>  -->		
         </ul>
     </div>
 </nav>
+
 <p>
 <div class="container">
 <div class="jumbotron">

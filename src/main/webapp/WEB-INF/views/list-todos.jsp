@@ -6,17 +6,17 @@
 <head>
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
 <title>${name}'s To-do List </title>
 </head>
 <body>
-	<h1 class="text-center text-info"> To-do List </h1>
-
- 	<div class="table-responsive" style="text-align: center">
+	<h1 class="text-center text-info"> ${name} To-do List </h1>
+ 	<div class="table-responsive" style="text-align: center" id="demo1">
  			<table class="table table-dark table-hover">
  				<thead style="color:#6bc4c4;">
  						<tr>
  							<th> ID </th>
- 							<th> Title </th>
+ 							<th> <b> Title </b> </th>
  							<th> Description </th>
  							<th> Priority </th>
  							<th> Status </th>
@@ -27,13 +27,15 @@
  					<c:forEach items="${todos}" var ="todo">
  						<tr>
  							<td>${todo.id} </td>
- 							<td>${todo.title} </td>
- 							<td>${todo.description} </td>
- 							<td>${todo.priority} </td>
+ 							<td style="white-space:pre;"><b>${todo.title}</b> </td>
+ 							<td style="white-space:pre;">${todo.description} </td>
+ 							<td class="textholder">${todo.priority}</td>
  							<td>${todo.done} </td>
  							<td>
  								<a type="button" class="btn btn-info large " style="background-color: #009da9;"
-								href="/delete-todo?id=${todo.id}">Delete</a>
+ 								href="/update-todo?id=${todo.id}&title=${todo.title}&description=${todo.description}">Edit</a>
+ 								<a type="button" class="btn btn-info large " style="background-color: #A81B08; border-color:#A81B08"
+								href="/delete-todo?id=${todo.id}" onclick="return confirm('Are you sure you want to delete this task?')">Delete</a>
  							<!-- <a class="button" href="<c:url value= '/delete-todo/${todo.id}'/>" > Delete </a>	 -->
  							</td>
  						</tr>
@@ -46,6 +48,7 @@
  		</div>				
 
 </body>
+<script type="text/javascript" src="<c:url value="/resources/JS/main.js" />"></script>
 </html>
 
 
