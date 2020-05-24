@@ -9,10 +9,10 @@
 
 <body>
 <img src="https://i.ibb.co/r555jww/img.png"  style="position: top;">
-	    <a href="/login"  id="welcome" class="btn btn-info Disabled" style="background-color: #009da9; position: absolute; right: 15%; 
+	    <a href="/"  id="welcome" class="btn btn-info Disabled" style="background-color: #009da9; position: absolute; right: 15%; 
     border-radius: 1px;">Welcome, ${name}!</a>
     
-    <a href="/login" class="btn btn-info toHide" style="background-color: #009da9; position: absolute; right: 10%; 
+    <a href="/login" class="btn btn-info toHide" style="background-color: #009da9; position: absolute; right: 5%; 
     border-radius: 1px;" id="loginButton" > Log In  </a>
         <a href="/logout1" class="btn btn-info" style="background-color: #009da9; position: absolute; right: 5%; 
     border-radius: 1px;" id="logoutButton" > Log Out  </a>

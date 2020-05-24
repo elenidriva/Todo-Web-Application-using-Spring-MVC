@@ -22,7 +22,7 @@
     <form action="/update-todo" method="POST" class="form anchor">
      <div class="form-group text-center">
         <div class="form-group">
-        Title: <pre> <textarea name="title" type="text" class="form-control"  style="height: 50px;white-space:pre-wrap; word-wrap:break-word">&#13;&#10; ${title}</textarea> </pre>
+        Title: <pre> <textarea name="title" type="text" class="form-control"  style="height: 50px;white-space:pre-wrap; word-wrap:break-word">${title}</textarea> </pre>
         <br> </br>
         <p>Description : <textarea name="description" type="text" id="string" class="form-control"  style="height: 100px;">${description}</textarea> </p>
         <p>High Priority : 

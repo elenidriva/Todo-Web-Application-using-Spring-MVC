@@ -12,15 +12,16 @@ import org.springframework.stereotype.Service;
 public class TodoService {
 
 	private static List<Todo> todos = new ArrayList<Todo>() {{
-			add(new Todo(1,"Physics Homework","Page 28 ex. 1,2,3 ", Priority.MEDIUM, false));
-			add(new Todo(2,"Maths Homework","Page 30 Revision ", Priority.HIGH, false));
+			add(new Todo(1,"Physics Homework","Page 28 ex. 1,2,3 ", Priority.MEDIUM, new Date(), false));
+			add(new Todo(2,"Maths Homework","Page 30 Revision ", Priority.HIGH, new Date(), false));
 	}};
 			
 	private static int count = 2;
 	// We need to have a way to add new Todos, retrieve Todos and delete Todos
 	
-	public void addTodo(String title, String description, Priority priority, boolean isDone) {		
-		todos.add(new Todo(++count, title, description, priority, isDone));	
+	public void addTodo(String title, String description, Priority priority, Date targetDate, boolean isDone) {		
+		todos.add(new Todo(++count, title, description, priority, targetDate, isDone));	
+		System.out.println(targetDate);
 	}
 	
 	/*public void editTodo(int id, String title, String description, Priority priority, boolean isDone) {		

@@ -18,7 +18,7 @@ public class CustomLogoutHandler implements LogoutHandler {
     		if (auth != null) {
     			new SecurityContextLogoutHandler().logout(request, response, auth);
     		}
-    		return "/logout1";
+    		return "/login1";
 
     }
 

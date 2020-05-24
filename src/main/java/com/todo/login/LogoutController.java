@@ -29,7 +29,7 @@ public class LogoutController {
 
 			model.put("name", "visitor");
 
-		return "/login1";
+		return "/login";
 	}
 
 }
