@@ -6,8 +6,9 @@
 <title>Page</title>
 </head>
 <body>
-<h1> You're logged out</h1>
+<h1 style="color: #A81B08"> You've been logged out</h1>
  
 
 </body>
+<%@ include file="common/footer.jspf"%>
 </html>

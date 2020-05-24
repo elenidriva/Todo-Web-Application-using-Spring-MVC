@@ -6,11 +6,10 @@
 <head>
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-
-<title>${name}'s To-do List </title>
 </head>
 <body>
-	<h1 class="text-center text-info"> ${name} To-do List </h1>
+
+	<h1 class="text-center text-info"> ${name}'s To-do List </h1>
  	<div class="table-responsive" style="text-align: center" id="demo1">
  			<table class="table table-dark table-hover">
  				<thead style="color:#6bc4c4;">
@@ -44,11 +43,12 @@
  				</tbody>
  			</table>
  			<a href="/add-todo" class="btn btn-info large" style="background-color: #009da9;" > Add </a>
-
+			<!-- <a id="addButton" class="btn btn-info large" style="background-color: #009da9;" >  JS Add </a>  -->
  		</div>				
 
 </body>
 <script type="text/javascript" src="<c:url value="/resources/JS/main.js" />"></script>
+<%@ include file="common/footer.jspf"%>
 </html>
 
 

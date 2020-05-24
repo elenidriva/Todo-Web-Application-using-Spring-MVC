@@ -3,15 +3,19 @@
 <head>
 <title>Todo Application</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
 </head>
 
 <body>
+
 <nav role="navigation" class="navbar navbar-expand-md navbar-dark" style="background-color:#6bc4c4;">
 	<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
 		<ul class="navbar-nav mr-auto">
-			<li  class="nav-item"> <a href="/" class="nav-link" style="color: #57575a;"><font size="+1">Home</font></a></li>	
-			<li class="nav-item active "><a href="/list-todos" class="nav-link"><b><font size="+1">To do list</font> </b></a></li>
+			<li  class="nav-item"> <a href="/" class="nav-link toHide" style="color: #57575a;"><font size="+1" >Home</font></a></li>	
+			<li class="nav-item active"> <a href="/list-todos" class="nav-link toHide"><b><font size="+1">To do list</font> </b></a></li>
+
 		</ul>
+
 <ul class="nav navbar-nav navbar-right">
 	</ul>		
 	</div>
@@ -24,14 +28,14 @@
      -->  
 	<div class="navbar-collapse collapse w-100 order-3 dual-collapse2 text-center">
         <ul class="navbar-nav ml-auto">
-		<a href="https://elenidriva.github.io/" class="nav-link" style="color: #57575a;" target="_blank"><font size="+1">Eleni's website</font></a> </li>
-
-        		<a href="/logout1" class="btn btn-info" style="background-color: #009da9;" > <font size="+1">Logout</font> </a>
+			<li> <a href="https://elenidriva.github.io/" class="nav-link toHide" style="color: #57575a;" target="_blank"><font size="+1">Eleni's website</font></a> </li>
         			<!-- <a href="/login" class="btn btn-info" style="background-color: #009da9;" > <font size="+1">Login</font> </a>  -->		
+       <li></li>
         </ul>
     </div>
 </nav>
-
+<%-- <div class="container" >
+ <h1 id ="welcome">Welcome, ${name}</h1></div>
 <p>
 <div class="container">
 <div class="jumbotron">
@@ -43,6 +47,7 @@
 <br>&nbsp;4. For aesthetic reasons a Logo was designed, along with a navigation bar and a header tile. Bootstrap was used in all the .jsp files. 
 <hr class="my-4"> The full project can be found in my github url <a href="https://github.com/elenidriva/Todo-Web-Application-using-Spring-MVC" target="_blank"><b style="color:#6bc4c4;">here</b> </a>
 </div>
-</div>
+</div> --%>
+<script type="text/javascript" src="<c:url value="/resources/JS/main.js" />"></script>
 </body>
 </html>

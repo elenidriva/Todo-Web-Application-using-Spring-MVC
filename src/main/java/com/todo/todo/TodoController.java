@@ -20,6 +20,7 @@ public class TodoController {
 	@RequestMapping(value = "/list-todos", method = RequestMethod.GET)
 	public String showTodosList(ModelMap model) {
 		//String user = (String) model.get("name");
+		model.put("name", getLoggedInUserName());
 		model.addAttribute("todos", service.retrieveTodos());
 		return "list-todos";
 	}

@@ -1,0 +1,25 @@
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<html>
+<head>
+<title>Todo Application</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container" >
+ <h1 id ="welcome">Welcome, ${name}</h1></div>
+<p>
+<div class="container">
+<div class="jumbotron">
+ <h1 class="display-4">Hello, viewer!</h1>
+ This is a simple Spring MVC project. This Todo - Task Application implements basic concepts of a Spring Web Application, such as:
+<br>&nbsp;1. Handling the Login / Logout
+<br>&nbsp;2. Viewing - Adding - Editing - Deleting Todos - Tasks
+<br>&nbsp;3. Providing all the necessary security regarding Logging in
+<br>&nbsp;4. For aesthetic reasons a Logo was designed, along with a navigation bar and a header tile. Bootstrap was used in all the .jsp files. 
+<hr class="my-4"> The full project can be found in my github url <a href="https://github.com/elenidriva/Todo-Web-Application-using-Spring-MVC" target="_blank"><b style="color:#6bc4c4;">here</b> </a>
+</div>
+</div>
+</body>
+</html>
