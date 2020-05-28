@@ -22,13 +22,5 @@ public class DeleteTodoController {
 		//model.clear();// to prevent request parameter "name" to be passed
 		return "redirect:/list-todos";
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

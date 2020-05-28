@@ -11,7 +11,7 @@ public class Todo {
 	private String description;
 	private Priority  priority;
 	private Date targetDate;
-	boolean isDone;
+
 	
 	
 
@@ -19,14 +19,13 @@ public class Todo {
 		super();
 	} 
 	
-	public Todo(int id, String title, String description,Priority priority, Date targetDate, boolean isDone) {
+	public Todo(int id, String title, String description,Priority priority, Date targetDate) {
 		super();
 		this.id = id;
 		this.title = title;
 		this.description = description;
 		this.priority = priority;
 		this.targetDate = targetDate;
-		this.isDone = isDone;
 	}
 
 	public int getId() {
@@ -60,16 +59,11 @@ public class Todo {
 	public void setTargetDate(Date targetDate) {
 		this.targetDate = targetDate;
 	}	
-	public boolean isDone() {
-		return isDone;
-	}
-	public void setDone(boolean isDone) {
-		this.isDone = isDone;
-	}
+
 	@Override
 	public String toString() {
 		return "Todo [id=" + id + ", title=" + title + ", description=" + description + ", priority=" + priority
-				+", targetDate=" + targetDate + ", isDone=" + isDone + "]";
+				+", targetDate=" + targetDate + "]";
 	}
 	
 	
