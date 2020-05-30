@@ -1,5 +1,6 @@
 # Todo Web Application using Spring MVC
 This is a simple Task managing Web application that allows the user to add, edit and delete Tasks.
+![readme_photo](C:\Users\user\Documents\GitHub\Todo-Web-Application-using-Spring-MVC\README photo)
 ##Table of Contents
 * [General info](#general-info)
 * [Technologies/Tools](#technologies)
@@ -31,12 +32,12 @@ The user, once authenticated, can create, edit and delete Tasks. For each Task t
 To run this project, you just need to simply download it and import it in a programming environment (i.e. Eclipse IDE for Enterprise Java Developers).
 Via command line:
 ```
-$  cd  ../where_you_want_it_to_be_saved
+$ cd  ../where_you_want_it_to_be_saved
 $ git clone https://github.com/elenidriva/Todo-Web-Application-using-Spring-MVC.git
 ```
 Or just download and import existing maven project in your programming environment.
 
 
 
-###License
-The application is under the MIT license. See the LICENSE for more info.
+### License
+The application is under the MIT license.
