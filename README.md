@@ -43,7 +43,7 @@ Or just download and import existing maven project in your programming environme
 ## Run
 Run as > Maven build
 
-Add Goals: tomcat7:run
+Add Goals: ```tomcat7:run```
 
 In order to Log In, use the following:
 
