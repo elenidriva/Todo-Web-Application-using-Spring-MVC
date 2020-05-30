@@ -1,7 +1,7 @@
 # Todo Web Application using Spring MVC
 This is a simple Task managing Web application that allows the user to add, edit and delete Tasks.
 
-![readme_photo](https://ibb.co/0trLB95)
+![readme_photo](https://i.ibb.co/tXD6Z2R/readme-photo.png)
 
 ##Table of Contents
 * [General info](#general-info)
