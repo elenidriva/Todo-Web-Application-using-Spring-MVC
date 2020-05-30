@@ -12,14 +12,15 @@ The user, once authenticated, can create, edit and delete Tasks. For each Task t
 
 ## Technologies/Tools
 * Spring MVC
-* Spring Bootstrap
+* Spring Boot
+* Spring Security
 * Maven
 
-###Back-end:
+### Back-end:
 * Java 13 (Model & Controllers)
 * Tomcat server
 
-###Front-end:
+### Front-end:
 * HTML
 * CSS
 * Bootstrap 4
@@ -31,9 +32,10 @@ To run this project, you just need to simply download it and import it in a prog
 Via command line:
 ```
 $  cd  ../where_you_want_it_to_be_saved
-$git clone https://github.com/elenidriva/Todo-Web-Application-using-Spring-MVC.git
-Import existing project in your programming environment.
+$ git clone https://github.com/elenidriva/Todo-Web-Application-using-Spring-MVC.git
 ```
+Or just download and import existing maven project in your programming environment.
+
 
 
 ###License
