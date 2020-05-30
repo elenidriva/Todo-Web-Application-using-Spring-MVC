@@ -7,6 +7,7 @@ This is a simple Task managing Web application that allows the user to add, edit
 * [General info](#general-info)
 * [Technologies & Tools](#technologies--tools)
 * [Setup](#setup)
+* [Run](#run)
 * [Future improvements & To dos](#future-improvements--to-dos)
 * [License](#license)
 ## General info
@@ -39,10 +40,16 @@ $ cd  ../where_you_want_it_to_be_saved
 $ git clone https://github.com/elenidriva/Todo-Web-Application-using-Spring-MVC.git
 ```
 Or just download and import existing maven project in your programming environment.
-
+## Run
+Run as > Maven build
+Add Goals: tomcat7:run
+In order to Log In, use the following:
+Username: user
+Password: 1234
 ## Future improvements & To dos
 * Add custom Log in page (instead of the default one from Spring Security)
 * Sorting options (based on Target Date or Priority)
+* Improve the display of TargetDate
 * Other features
 
 ### License
