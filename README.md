@@ -5,16 +5,16 @@ This is a simple Task managing Web application that allows the user to add, edit
 
 ## Table of Contents
 * [General info](#general-info)
-* [Technologies/Tools](#technologies)
+* [Technologies & Tools](#technologies)
 * [Setup](#setup)
-* [Future improvements/To dos](#Future-improvements/To-dos)
+* [Future improvements/To dos](#Future-improvements)
 * [License](#license)
 ## General info
 This is a simple Task managing Web application that includes authenticated Log in. Model-View-Control architecture is used. The business logic (Model) and the Controllers are written in Java. HTML, CSS/Bootstrap and Javascript are used for the content, presentation and interactive layers respectively.
 
 The user, once authenticated, can create, edit and delete Tasks. For each Task the user can add a Title, a Description, set its Priority and its Target Date (Due in), as well as mark is as "Done".
 
-## Technologies/Tools
+## Technologies & Tools
 * Spring MVC
 * Spring Boot
 * Spring Security
@@ -40,7 +40,7 @@ $ git clone https://github.com/elenidriva/Todo-Web-Application-using-Spring-MVC.
 ```
 Or just download and import existing maven project in your programming environment.
 
-## Future improvements/To dos
+## Future improvements & To dos
 * Add custom Log in page (instead of the default one from Spring Security)
 * Sorting options (based on Target Date or Priority)
 * Other features
