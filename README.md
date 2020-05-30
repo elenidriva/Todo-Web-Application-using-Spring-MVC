@@ -5,9 +5,9 @@ This is a simple Task managing Web application that allows the user to add, edit
 
 ## Table of Contents
 * [General info](#general-info)
-* [Technologies & Tools](#technologies-&-tools)
+* [Technologies & Tools](#technologies--tools)
 * [Setup](#setup)
-* [Future improvements & To dos](#future-improvements-&-to-dos)
+* [Future improvements & To dos](#future-improvements-to-dos)
 * [License](#license)
 ## General info
 This is a simple Task managing Web application that includes authenticated Log in. Model-View-Control architecture is used. The business logic (Model) and the Controllers are written in Java. HTML, CSS/Bootstrap and Javascript are used for the content, presentation and interactive layers respectively.
