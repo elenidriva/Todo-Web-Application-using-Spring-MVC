@@ -11,13 +11,13 @@ This is a simple Task managing Web application that includes authenticated Log i
 The user, once authenticated, can create, edit and delete Tasks. For each Task the user can add a Title, a Description, set its Priority and its Target Date (Due in), as well as mark is as "Done".
 
 ## Technologies/Tools
-*Spring MVC
-*Spring Bootstrap
-*Maven
+* Spring MVC
+* Spring Bootstrap
+* Maven
 
 ###Back-end:
-*[Java 13] (Model & Controllers)
-*[Tomcat server]
+* Java 13 (Model & Controllers)
+* Tomcat server
 
 ###Front-end:
 * HTML
