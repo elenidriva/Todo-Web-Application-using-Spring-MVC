@@ -46,8 +46,11 @@ Run as > Maven build
 Add Goals: tomcat7:run
 
 In order to Log In, use the following:
+
 Username: user
+
 Password: 1234
+
 ## Future improvements & To dos
 * Add custom Log in page (instead of the default one from Spring Security)
 * Sorting options (based on Target Date or Priority)
